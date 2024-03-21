@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | lendsqr</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-work">
+    <div class="relative">
+      <nav
+        class="flex fixed items-center justify-between px-8 py-8 w-full bg-white z-[2]"
+      >
+        <div class="w-1/4 flex gap-1">
+          <img src="./assets/Group.svg" alt="" />
+          <img class="md:hidden" src="./assets/notification.svg" alt="" />
+
+        </div>
+
+        
+
+        <div class="hidden md:flex items-center bg-assmblue rounded-lg overflow-hidden">
+          <input
+            type="text"
+            placeholder="Search for anything"
+            class="border w-96 py-3 px-5 border-assmgrey"
+          />
+          <span class="bg-assmblue my-3 mx-5 text-center"
+            ><img src="./assets/search.svg" alt=""
+          /></span>
+        </div>
+
+        <div class="flex gap-8 items-center">
+          <a href="#" class=" md:inline-block underline text-primary hidden">Docs</a>
+          <img class="hidden md:block" src="./assets/notification.svg" alt="" />
+
+          <div class="flex items-center gap-4 justify-center">
+            <img src="./assets/avatar.png" alt="" />
+
+            <select name="" id="" class="hidden md:block text-primary font-semibold px-2">
+              <option value="Adedeji">Adedeji</option>
+            </select>
+
+            <div class="w-10 md:hidden ">
+              <img id="hamburger" class="" src="./assets/hamburger icon.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="flex absolute top-20 w-full">
+        <nav id="side-nav"
+        class="text-primary px-3 md:px-10 border py-10 z-[1]  absolute bg-white md:static hidden md:block">
+          <ul>
+            <li class="flex">
+              <img class="" src="./assets/briefcase 1.svg" alt="briefcase" />
+              <select name="" id="" class="mb-13">
+                <option value="" class="mb-13">Switch Organization</option>
+              </select>
+            </li>
+
+            <li class="my-14 flex items-center gap-1">
+              <img class="h-4" src="./assets/home 1.png" alt="" /><a href="#"
+                >Dashboard</a
+              >
+            </li>
+          </ul>
+
+          <p class="mb-2">CUSTOMERS</p>
+          <ul class="">
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/user-friends 1.png" alt="" /> Users
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/guarantors.png" alt="" />
+              Guarantors
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/sack 1.png" alt="" />Loans
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img
+                class="h-4"
+                src="./assets/handshake-regular 1.png"
+                alt=""
+              />Decision Models
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/piggy-bank 1.png" alt="" />Savings
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/loan request.png" alt="" />Loan
+              Requests
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/whitelist.png" alt="" />Whitelist
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/karma.png" alt="" />Karma
+            </li>
+          </ul>
+
+          <p class="mb-2">BUSINESSES</p>
+          <ul class="">
+            <li class="py-4 flex items-center gap-1">
+              <img
+                class="h-4"
+                src="./assets/briefcase 1.svg"
+                alt=""
+              />Organization
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/loan request.png" alt="" />Loan
+              Products
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img
+                class="h-4"
+                src="./assets/savings products.png"
+                alt=""
+              />Savings Products
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/fees.png" alt="" />Fees and Charges
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img
+                class="h-4"
+                src="./assets/transactions.png"
+                alt=""
+              />Transactions
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/services.png" alt="" />Services
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img
+                class="h-4"
+                src="./assets/service contact.png"
+                alt=""
+              />Services Account
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img
+                class="h-4"
+                src="./assets/setttlement.png"
+                alt=""
+              />Settlements
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/report.png" alt="" />Reports
+            </li>
+          </ul>
+
+          <p class="mb-2">SETTINGS</p>
+          <ul class="">
+            <li class="py-4 flex items-center gap-1">
+              <img
+                class="h-4"
+                src="./assets/preferences.png"
+                alt=""
+              />Preferences
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/settings fees.png" alt="" />Fees
+              and Pricing
+            </li>
+            <li class="py-4 flex items-center gap-1">
+              <img class="h-4" src="./assets/audit logs.png" alt="" />Audit Logs
+            </li>
+          </ul>
+        </nav>
+
+        <section class="bg-gray-50 p-8  w-full">
+          <h2 class="text-primary text-3xl md:text-2xl mt-6 md:mt-14 mb-10 font-semibold">Users</h2>
+
+          <div class="flex flex-col md:grid grid-cols-4 text-primary gap-7">
+            <div class="bg-white rounded-sm py-5 px-7 ">
+              <img src="./assets/usericon.svg" alt="" />
+              <p class="my-3 text-2xl  md:text-base md:font-normal">
+                USERS</p>
+              <h2 class="font-bold text-4xl md:text-2xl">2,453</h2>
+            </div>
+
+            <div class="bg-white rounded-sm py-5 px-7 ">
+              <img src="./assets/activeusers.svg" alt="" />
+              <p class="my-3 text-2xl  md:text-base md:font-normal">
+                ACTIVE USERS</p>
+              <h2 class="font-bold text-4xl md:text-2xl">2,453</h2>
+            </div>
+
+            <div class="bg-white rounded-sm py-5 px-7 ">
+              <img src="./assets/userswithloan.svg" alt="" />
+              <p class="my-3 text-2xl  md:text-base md:font-normal">
+                USERS WITH LOANS</p>
+              <h2 class="font-bold text-4xl md:text-2xl">12,453</h2>
+            </div>
+
+            <div class="bg-white rounded-sm py-5 px-7 ">
+              <img src="./assets/userssavings.svg" alt="" />
+              <p class="my-3 text-2xl  md:text-base md:font-normal">
+                USERS WITH SAVINGS</p>
+              <h2 class="font-bold text-4xl md:text-2xl">102,453</h2>
+            </div>
+          </div>
+
+          <section class="my-8 px-5 bg-white w-full overflow-x-auto ">
+            <table class=" p-5  w-full text-sm" id="kebab-icons-container">
+              <tr class="py-8 text-xs h-16 text-assmgrey text">
+                <td class="text-center relative">
+                  <div class="flex items-center gap-2">
+                    Organization
+                    <span class="inline-block text-center"
+                      ><button class="">
+                        <img
+                          src="./assets/filter-results-button.svg"
+                          alt=""
+                          id="org-btn"
+                        />
+                      </button>
+                    </span>
+                    <form
+                      action=""
+                      id="org-menu"
+                      class="hidden px-5 py-8 text-primary flex-col absolute top-14 text-left text-sm bg-white border"
+                    >
+                      <label for="">Organization</label>
+                      <select
+                        name=""
+                        id=""
+                        class="border rounded-lg px-5 mt-2 mb-5 py-3"
+                      >
+                        <option value="">Select</option>
+                      </select>
+                      <label for="">Username</label>
+                      <input
+                        type="text"
+                        placeholder="Username"
+                        class="border rounded-lg px-5 mt-2 mb-5 py-3"
+                      />
+                      <label for="">Email</label>
+                      <input
+                        type="email"
+                        placeholder="Email"
+                        class="border rounded-lg px-5 mt-2 mb-5 py-3"
+                      />
+                      <label for="">Date</label>
+                      <input
+                        type="date"
+                        placeholder="Date"
+                        class="border rounded-lg px-5 mt-2 mb-5 py-3"
+                      />
+                      <label for="">Phone Number</label>
+                      <input
+                        type="text"
+                        placeholder="Phone Number"
+                        class="border rounded-lg px-5 mt-2 mb-5 py-3"
+                      />
+                      <label for="">Status</label>
+                      <select
+                        name=""
+                        id=""
+                        class="border rounded-lg px-5 mt-2 mb-5 py-3"
+                      >
+                        <option value="">Select</option>
+                      </select>
+                      <div class="flex gap-4">
+                        <button
+                          class="py-3 px-7 border border-primary text-primary rounded-lg"
+                        >
+                          Reset
+                        </button>
+                        <button
+                          class="py-3 px-7 border bg-assmblue text-white rounded-lg"
+                        >
+                          Filter
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </td>
+                <td>
+                  <div class="flex items-center gap-2">
+                    Username
+                    <span class="inline-block text-center"
+                      ><img src="./assets/filter-results-button.svg" alt=""
+                    /></span>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <div class="flex items-center gap-2">
+                    Email
+                    <span class="inline-block text-center"
+                      ><img src="./assets/filter-results-button.svg" alt=""
+                    /></span>
+                  </div>
+                </td>
+                <td>
+                  <div class="flex items-center gap-2">
+                    Phone number
+                    <span class="inline-block text-center"
+                      ><img src="./assets/filter-results-button.svg" alt=""
+                    /></span>
+                  </div>
+                </td>
+                <td>
+                  <div class="flex items-center gap-2">
+                    Date Joined
+                    <span class="inline-block text-center"
+                      ><img src="./assets/filter-results-button.svg" alt=""
+                    /></span>
+                  </div>
+                </td>
+                <td>
+                  <div class="flex items-center gap-2">
+                    Status
+                    <span class="inline-block text-center"
+                      ><img src="./assets/filter-results-button.svg" alt=""
+                    /></span>
+                  </div>
+                </td>
+                <td class="md:hidden">Options</td>
+              </tr>
+
+              <tr class="border-b h-16">
+                <td class="">lendsqr</td>
+                <td>Adedeji</td>
+                <td>adedeji@lendsqr.com</td>
+                <td>08078903721</td>
+                <td>May 15, 2020 10:00 AM</td>
+                <td class="">
+                  <p class="rounded-full bg-gray-50 text-center px-3 py-2">
+                    Inactive
+                  </p>
+                </td>
+                <td class="relative px-2">
+                  <button
+                    href="#"
+                    class="hover:bg-gray-50 hover:border hover:rounded-full p-1"
+                    onclick="toggleMenu(1)"
+                  >
+                    <img src="./assets/kebab.svg" alt="" />
+                  </button>
+                  <ul
+                    class="hidden absolute top-8 right-10 w-40 bg-white p-5"
+                    id="menu1"
+                  >
+                    <li class="my-5">
+                      <a
+                        href="./userdetails.html"
+                        class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/view users.svg" alt="" />View
+                        Details</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/activate user.svg" alt="" />Activate
+                        User</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/blacklist user.svg" alt="" />Delete
+                        User</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr class="border-b h-16">
+                <td class="">Irorun</td>
+                <td>Debby Ogana</td>
+                <td>debby2@irorun.com</td>
+                <td>08160780928</td>
+                <td>Apr 30, 2020 10:00 AM</td>
+                <td>
+                  <p
+                    class="rounded-full bg-yellow-100 text-yellow-500 text-center px-3 py-2"
+                  >
+                    Pending
+                  </p>
+                </td>
+                <td class="relative px-2">
+                  <button
+                    class="hover:bg-gray-50 hover:border hover:rounded-full p-1"
+                    onclick="toggleMenu(2)"
+                  >
+                    <img src="./assets/kebab.svg" alt="" />
+                  </button>
+                  <ul
+                    class="hidden absolute top-8 right-10 w-40 bg-white p-5"
+                    id="menu2"
+                  >
+                    <li class="my-5">
+                      <a
+                        href="./userdetails.html"
+                        class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/view users.svg" alt="" />View
+                        Details</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/activate user.svg" alt="" />Activate
+                        User</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/blacklist user.svg" alt="" />Delete
+                        User</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr class="border-b h-16">
+                <td>Lendstar</td>
+                <td>Grace Effiom</td>
+                <td>garceeffion@lendstar.com</td>
+                <td>07060780922</td>
+                <td>Apr 30, 2020 10:00 AM</td>
+                <td>
+                  <p
+                    class="rounded-full bg-red-200 text-red-400 text-center px-3 py-2"
+                  >
+                    Blacklisted
+                  </p>
+                </td>
+                <td class="relative px-2">
+                  <button
+                    class="hover:bg-gray-50 hover:border hover:rounded-full p-1"
+                    onclick="toggleMenu(3)"
+                  >
+                    <img src="./assets/kebab.svg" alt="" />
+                  </button>
+                  <ul
+                    class="hidden absolute top-8 right-10 w-40 bg-white p-5"
+                    id="menu3"
+                  >
+                    <li class="my-5">
+                      <a
+                        href="./userdetails.html"
+                        class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/view users.svg" alt="" />View
+                        Details</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/activate user.svg" alt="" />Activate
+                        User</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/blacklist user.svg" alt="" />Delete
+                        User</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr class="border-b h-16">
+                <td>Lendsqr</td>
+                <td>Tosin Dokunmu</td>
+                <td>tosin@lendsqr.com</td>
+                <td>07003309226</td>
+                <td>Apr 10, 2020 10:00 AM</td>
+                <td>
+                  <p
+                    class="rounded-full bg-yellow-100 text-yellow-500 text-center px-3 py-2"
+                  >
+                    Pending
+                  </p>
+                </td>
+                <td class="relative px-2">
+                  <button
+                    class="hover:bg-gray-50 hover:border hover:rounded-full p-1"
+                    onclick="toggleMenu(4)"
+                  >
+                    <img src="./assets/kebab.svg" alt="" />
+                  </button>
+                  <ul
+                    class="hidden absolute top-8 right-10 w-40 bg-white p-5"
+                    id="menu4"
+                  >
+                    <li class="my-5">
+                      <a
+                        href="./userdetails.html"
+                        class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/view users.svg" alt="" />View
+                        Details</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/activate user.svg" alt="" />Activate
+                        User</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/blacklist user.svg" alt="" />Delete
+                        User</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr class="border-b h-16">
+                <td>Lendstar</td>
+                <td>Grace Effiom</td>
+                <td>garceeffion@lendstar.com</td>
+                <td>07060780922</td>
+                <td>Apr 30, 2020 10:00 AM</td>
+                <td>
+                  <p
+                    class="rounded-full bg-green-100 text-green-500 text-center px-3 py-2"
+                  >
+                    Active
+                  </p>
+                </td>
+                <td class="relative px-2">
+                  <button
+                    class="hover:bg-gray-50 hover:border hover:rounded-full p-1"
+                    onclick="toggleMenu(5)"
+                  >
+                    <img src="./assets/kebab.svg" alt="" />
+                  </button>
+                  <ul
+                    class="hidden absolute top-8 right-10 w-40 bg-white p-5"
+                    id="menu5"
+                  >
+                    <li class="my-5">
+                      <a
+                        href="./userdetails.html"
+                        class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/view users.svg" alt="" />View
+                        Details</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/activate user.svg" alt="" />Activate
+                        User</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/blacklist user.svg" alt="" />Delete
+                        User</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr class="border-b h-16">
+                <td>Lendsqr</td>
+                <td>Tosin Dokunmu</td>
+                <td>tosin@lendsqr.com</td>
+                <td>07003309226</td>
+                <td>Apr 10, 2020 10:00 AM</td>
+                <td>
+                  <p
+                    class="rounded-full bg-green-100 text-green-500 text-center px-3 py-2"
+                  >
+                    Active
+                  </p>
+                </td>
+                <td class="relative px-2">
+                  <button
+                    class="hover:bg-gray-50 hover:border hover:rounded-full p-1"
+                    onclick="toggleMenu(6)"
+                  >
+                    <img src="./assets/kebab.svg" alt="" />
+                  </button>
+                  <ul
+                    class="hidden absolute top-8 right-10 w-40 bg-white p-5"
+                    id="menu6"
+                  >
+                    <li class="my-5">
+                      <a
+                        href="./userdetails.html"
+                        class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/view users.svg" alt="" />View
+                        Details</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/activate user.svg" alt="" />Activate
+                        User</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/blacklist user.svg" alt="" />Delete
+                        User</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr class="border-b h-16">
+                <td>Lendstar</td>
+                <td>Grace Effiom</td>
+                <td>garceeffion@lendstar.com</td>
+                <td>07060780922</td>
+                <td>Apr 30, 2020 10:00 AM</td>
+                <td>
+                  <p
+                    class="rounded-full bg-yellow-100 text-yellow-500 text-center px-3 py-2"
+                  >
+                    Pending
+                  </p>
+                </td>
+                <td class="relative px-2">
+                  <button
+                    class="hover:bg-gray-50 hover:border hover:rounded-full p-1"
+                    onclick="toggleMenu(7)"
+                  >
+                    <img src="./assets/kebab.svg" alt="" />
+                  </button>
+                  <ul
+                    class="hidden absolute top-8 right-10 w-40 bg-white p-5"
+                    id="menu7"
+                  >
+                    <li class="my-5">
+                      <a
+                        href="./userdetails.html"
+                        class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/view users.svg" alt="" />View
+                        Details</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/activate user.svg" alt="" />Activate
+                        User</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/blacklist user.svg" alt="" />Delete
+                        User</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr class="border-b h-16">
+                <td>Lendsqr</td>
+                <td>Tosin Dokunmu</td>
+                <td>tosin@lendsqr.com</td>
+                <td>07003309226</td>
+                <td>Apr 10, 2020 10:00 AM</td>
+                <td>
+                  <p class="rounded-full bg-gray-50 text-center px-3 py-2">
+                    Inactive
+                  </p>
+                </td>
+                <td class="relative px-2">
+                  <button
+                    class="hover:bg-gray-50 hover:border hover:rounded-full p-1"
+                    onclick="toggleMenu(8)"
+                  >
+                    <img src="./assets/kebab.svg" alt="" />
+                  </button>
+                  <ul
+                    class="hidden absolute top-8 right-10 w-40 bg-white p-5"
+                    id="menu8"
+                  >
+                    <li class="my-5">
+                      <a
+                        href="./userdetails.html"
+                        class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/view users.svg" alt="" />View
+                        Details</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/activate user.svg" alt="" />Activate
+                        User</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/blacklist user.svg" alt="" />Delete
+                        User</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr class="border-b h-16">
+                <td>Lendstar</td>
+                <td>Grace Effiom</td>
+                <td>garceeffion@lendstar.com</td>
+                <td>07060780922</td>
+                <td>Apr 30, 2020 10:00 AM</td>
+                <td>
+                  <p class="rounded-full bg-gray-50 text-center px-3 py-2">
+                    Inactive
+                  </p>
+                </td>
+                <td class="relative px-2">
+                  <button
+                    class="hover:bg-gray-50 hover:border hover:rounded-full p-1"
+                    onclick="toggleMenu(9)"
+                  >
+                    <img src="./assets/kebab.svg" alt="" />
+                  </button>
+                  <ul
+                    class="hidden absolute top-8 right-10 w-40 bg-white p-5"
+                    id="menu9"
+                  >
+                    <li class="my-5">
+                      <a
+                        href="./userdetails.html"
+                        class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/view users.svg" alt="" />View
+                        Details</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/activate user.svg" alt="" />Activate
+                        User</a
+                      >
+                    </li>
+                    <li class="my-5">
+                      <a href="" class="flex gap-2 items-center text-primary"
+                        ><img src="./assets/blacklist user.svg" alt="" />Delete
+                        User</a
+                      >
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </section>
+
+          <div
+            class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6"
+          >
+            <div class="flex flex-1 justify-between sm:hidden">
+              <a
+                href="#"
+                class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+                >Previous</a
+              >
+              <a
+                href="#"
+                class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50"
+                >Next</a
+              >
+            </div>
+            <div
+              class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between"
+            >
+              <div>
+                <p class="text-sm text-gray-700">
+                  Showing
+                  <span class="font-medium">
+                    <select
+                      name=""
+                      id=""
+                      class="bg-assmgrey text-primary border"
+                    >
+                      <option
+                        value="
+                        "
+                      >
+                        100
+                      </option>
+                    </select>
+                  </span>
+                  out of
+                  <span class="font-medium">100</span>
+                </p>
+              </div>
+              <div>
+                <nav
+                  class="isolate inline-flex -space-x-px rounded-md shadow-sm"
+                  aria-label="Pagination"
+                >
+                  <a
+                    href="#"
+                    class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+                  >
+                    <span class="sr-only">Previous</span>
+                    <svg
+                      class="h-5 w-5 bg-assmgrey"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
+                  <a
+                    href="#"
+                    aria-current="page"
+                    class="relative z-10 inline-flex items-center border px-4 py-2 text-sm font-semibold text-assmgrey focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    >1</a
+                  >
+                  <a
+                    href="#"
+                    class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+                    >2</a
+                  >
+                  <a
+                    href="#"
+                    class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
+                    >3</a
+                  >
+                  <span
+                    class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0"
+                    >...</span
+                  >
+                  <a
+                    href="#"
+                    class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex"
+                    >15</a
+                  >
+                  <a
+                    href="#"
+                    class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+                    >16</a
+                  >
+                  <a
+                    href="#"
+                    class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
+                  >
+                    <span class="sr-only">Next</span>
+                    <svg
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
